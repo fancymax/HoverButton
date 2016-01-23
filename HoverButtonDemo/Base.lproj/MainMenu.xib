@@ -671,7 +671,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="480" height="263"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
             <view key="contentView" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="263"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -687,6 +687,9 @@
                             <userDefinedRuntimeAttribute type="color" keyPath="hoveredBackgroundColor">
                                 <color key="value" red="0.9529411793" green="0.61176472900000001" blue="0.070588238540000001" alpha="1" colorSpace="calibratedRGB"/>
                             </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="pressedBackgroundColor">
+                                <color key="value" red="1" green="0.7679675655888456" blue="0.042983902739941016" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XCE-rB-MGf" customClass="HoverButton" customModule="HoverButtonDemo" customModuleProvider="target">
@@ -699,6 +702,9 @@
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="hoveredBackgroundColor">
                                 <color key="value" red="0.9529411793" green="0.61176472900000001" blue="0.070588238540000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="pressedBackgroundColor">
+                                <color key="value" red="1" green="0.76796756560000001" blue="0.042983902740000003" alpha="1" colorSpace="calibratedRGB"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </button>
@@ -713,6 +719,9 @@
                             <userDefinedRuntimeAttribute type="color" keyPath="hoveredBackgroundColor">
                                 <color key="value" red="0.9529411793" green="0.61176472900000001" blue="0.070588238540000001" alpha="1" colorSpace="calibratedRGB"/>
                             </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="pressedBackgroundColor">
+                                <color key="value" red="1" green="0.76796756560000001" blue="0.042983902740000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="euz-uQ-Ejj" customClass="HoverButton" customModule="HoverButtonDemo" customModuleProvider="target">
@@ -725,6 +734,9 @@
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="hoveredBackgroundColor">
                                 <color key="value" red="0.9529411793" green="0.61176472900000001" blue="0.070588238540000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="pressedBackgroundColor">
+                                <color key="value" red="1" green="0.76796756560000001" blue="0.042983902740000003" alpha="1" colorSpace="calibratedRGB"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </button>
@@ -739,6 +751,9 @@
                             <userDefinedRuntimeAttribute type="color" keyPath="hoveredBackgroundColor">
                                 <color key="value" red="0.9529411793" green="0.61176472900000001" blue="0.070588238540000001" alpha="1" colorSpace="calibratedRGB"/>
                             </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="pressedBackgroundColor">
+                                <color key="value" red="1" green="0.76796756560000001" blue="0.042983902740000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cjL-22-aU9" customClass="HoverButton" customModule="HoverButtonDemo" customModuleProvider="target">
@@ -751,6 +766,9 @@
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="hoveredBackgroundColor">
                                 <color key="value" red="0.9529411793" green="0.61176472900000001" blue="0.070588238540000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="pressedBackgroundColor">
+                                <color key="value" red="1" green="0.76796756560000001" blue="0.042983902740000003" alpha="1" colorSpace="calibratedRGB"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </button>

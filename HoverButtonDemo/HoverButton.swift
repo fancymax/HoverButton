@@ -11,8 +11,13 @@ import Cocoa
 class HoverButton: NSButton{
     var backgroundColor: NSColor?
     var hoveredBackgroundColor: NSColor?
+    var pressedBackgroundColor: NSColor?
     
     private var hovered: Bool = false
+    
+    override var wantsUpdateLayer:Bool{
+        return true
+    }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -29,6 +34,7 @@ class HoverButton: NSButton{
         self.createTrackingArea()
         self.hovered = false
         self.hoveredBackgroundColor = NSColor.selectedTextBackgroundColor()
+        self.pressedBackgroundColor = NSColor.selectedTextBackgroundColor()
         self.backgroundColor = NSColor.clearColor()
     }
     
@@ -46,12 +52,28 @@ class HoverButton: NSButton{
     override func mouseEntered(theEvent: NSEvent) {
         self.hovered = true
         NSCursor.pointingHandCursor().set()
-        self.layer?.backgroundColor = hoveredBackgroundColor?.CGColor
+        self.needsDisplay = true
     }
     
     override func mouseExited(theEvent: NSEvent) {
         self.hovered = false
         NSCursor.arrowCursor().set()
-        self.layer?.backgroundColor = backgroundColor?.CGColor
+        self.needsDisplay = true
+    }
+    
+    override func updateLayer() {
+        if(hovered){
+            if (self.cell!.highlighted){
+                self.layer?.backgroundColor = pressedBackgroundColor?.CGColor
+            }
+            else{
+                self.layer?.backgroundColor = hoveredBackgroundColor?.CGColor
+            }
+        }
+        else{
+            self.layer?.backgroundColor = backgroundColor?.CGColor
+        }
+        
+        Swift.print("updateLayer")
     }
 }
