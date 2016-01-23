@@ -1,0 +1,314 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F15710051C4FC0CB002663E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15710041C4FC0CB002663E3 /* AppDelegate.swift */; };
+		F15710071C4FC0CB002663E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F15710061C4FC0CB002663E3 /* Assets.xcassets */; };
+		F157100A1C4FC0CB002663E3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F15710081C4FC0CB002663E3 /* MainMenu.xib */; };
+		F15710131C4FC139002663E3 /* HoverButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15710121C4FC139002663E3 /* HoverButton.swift */; };
+		F18BBCF81C534A0000E78791 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = F18BBCF31C534A0000E78791 /* facebook.png */; };
+		F18BBCF91C534A0000E78791 /* google.png in Resources */ = {isa = PBXBuildFile; fileRef = F18BBCF41C534A0000E78791 /* google.png */; };
+		F18BBCFA1C534A0000E78791 /* instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = F18BBCF51C534A0000E78791 /* instagram.png */; };
+		F18BBCFB1C534A0000E78791 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = F18BBCF61C534A0000E78791 /* twitter.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F15710011C4FC0CB002663E3 /* HoverButtonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoverButtonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F15710041C4FC0CB002663E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F15710061C4FC0CB002663E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = HoverButtonDemo/Assets.xcassets; sourceTree = "<group>"; };
+		F15710091C4FC0CB002663E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F157100B1C4FC0CB002663E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = HoverButtonDemo/Info.plist; sourceTree = "<group>"; };
+		F15710121C4FC139002663E3 /* HoverButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoverButton.swift; sourceTree = "<group>"; };
+		F18BBCF31C534A0000E78791 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		F18BBCF41C534A0000E78791 /* google.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = google.png; sourceTree = "<group>"; };
+		F18BBCF51C534A0000E78791 /* instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instagram.png; sourceTree = "<group>"; };
+		F18BBCF61C534A0000E78791 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1570FFE1C4FC0CB002663E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1570FF81C4FC0CB002663E3 = {
+			isa = PBXGroup;
+			children = (
+				F15710031C4FC0CB002663E3 /* HoverButtonDemo */,
+				F15710021C4FC0CB002663E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F15710021C4FC0CB002663E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F15710011C4FC0CB002663E3 /* HoverButtonDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F15710031C4FC0CB002663E3 /* HoverButtonDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F15710041C4FC0CB002663E3 /* AppDelegate.swift */,
+				F15710121C4FC139002663E3 /* HoverButton.swift */,
+				F15710081C4FC0CB002663E3 /* MainMenu.xib */,
+				F18BBCFD1C53524B00E78791 /* Supporting Files */,
+				F18BBCF11C534A0000E78791 /* images */,
+			);
+			path = HoverButtonDemo;
+			sourceTree = "<group>";
+		};
+		F18BBCF11C534A0000E78791 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				F18BBCF31C534A0000E78791 /* facebook.png */,
+				F18BBCF41C534A0000E78791 /* google.png */,
+				F18BBCF51C534A0000E78791 /* instagram.png */,
+				F18BBCF61C534A0000E78791 /* twitter.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		F18BBCFD1C53524B00E78791 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F157100B1C4FC0CB002663E3 /* Info.plist */,
+				F15710061C4FC0CB002663E3 /* Assets.xcassets */,
+			);
+			name = "Supporting Files";
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F15710001C4FC0CB002663E3 /* HoverButtonDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F157100E1C4FC0CB002663E3 /* Build configuration list for PBXNativeTarget "HoverButtonDemo" */;
+			buildPhases = (
+				F1570FFD1C4FC0CB002663E3 /* Sources */,
+				F1570FFE1C4FC0CB002663E3 /* Frameworks */,
+				F1570FFF1C4FC0CB002663E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HoverButtonDemo;
+			productName = HoverButtonDemo;
+			productReference = F15710011C4FC0CB002663E3 /* HoverButtonDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1570FF91C4FC0CB002663E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = fancy;
+				TargetAttributes = {
+					F15710001C4FC0CB002663E3 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = F1570FFC1C4FC0CB002663E3 /* Build configuration list for PBXProject "HoverButtonDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1570FF81C4FC0CB002663E3;
+			productRefGroup = F15710021C4FC0CB002663E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F15710001C4FC0CB002663E3 /* HoverButtonDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1570FFF1C4FC0CB002663E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F18BBCFB1C534A0000E78791 /* twitter.png in Resources */,
+				F18BBCFA1C534A0000E78791 /* instagram.png in Resources */,
+				F15710071C4FC0CB002663E3 /* Assets.xcassets in Resources */,
+				F18BBCF81C534A0000E78791 /* facebook.png in Resources */,
+				F157100A1C4FC0CB002663E3 /* MainMenu.xib in Resources */,
+				F18BBCF91C534A0000E78791 /* google.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1570FFD1C4FC0CB002663E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F15710131C4FC139002663E3 /* HoverButton.swift in Sources */,
+				F15710051C4FC0CB002663E3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F15710081C4FC0CB002663E3 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F15710091C4FC0CB002663E3 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F157100C1C4FC0CB002663E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F157100D1C4FC0CB002663E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F157100F1C4FC0CB002663E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HoverButtonDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fancymax.HoverButtonDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F15710101C4FC0CB002663E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HoverButtonDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fancymax.HoverButtonDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1570FFC1C4FC0CB002663E3 /* Build configuration list for PBXProject "HoverButtonDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F157100C1C4FC0CB002663E3 /* Debug */,
+				F157100D1C4FC0CB002663E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F157100E1C4FC0CB002663E3 /* Build configuration list for PBXNativeTarget "HoverButtonDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F157100F1C4FC0CB002663E3 /* Debug */,
+				F15710101C4FC0CB002663E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1570FF91C4FC0CB002663E3 /* Project object */;
+}
