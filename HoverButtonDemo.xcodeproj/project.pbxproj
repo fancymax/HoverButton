@@ -15,6 +15,7 @@
 		F18BBCF91C534A0000E78791 /* google.png in Resources */ = {isa = PBXBuildFile; fileRef = F18BBCF41C534A0000E78791 /* google.png */; };
 		F18BBCFA1C534A0000E78791 /* instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = F18BBCF51C534A0000E78791 /* instagram.png */; };
 		F18BBCFB1C534A0000E78791 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = F18BBCF61C534A0000E78791 /* twitter.png */; };
+		F1A00F8E1C5B539900DD1C10 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A00F8D1C5B539900DD1C10 /* LoginButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F18BBCF41C534A0000E78791 /* google.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = google.png; sourceTree = "<group>"; };
 		F18BBCF51C534A0000E78791 /* instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instagram.png; sourceTree = "<group>"; };
 		F18BBCF61C534A0000E78791 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		F1A00F8D1C5B539900DD1C10 /* LoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		F15710031C4FC0CB002663E3 /* HoverButtonDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F1A00F8D1C5B539900DD1C10 /* LoginButton.swift */,
 				F15710041C4FC0CB002663E3 /* AppDelegate.swift */,
 				F15710121C4FC139002663E3 /* HoverButton.swift */,
 				F15710081C4FC0CB002663E3 /* MainMenu.xib */,
@@ -165,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F15710131C4FC139002663E3 /* HoverButton.swift in Sources */,
+				F1A00F8E1C5B539900DD1C10 /* LoginButton.swift in Sources */,
 				F15710051C4FC0CB002663E3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -676,56 +676,16 @@
                 <rect key="frame" x="0.0" y="0.0" width="480" height="263"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eBZ-JN-sxv" customClass="HoverButton" customModule="HoverButtonDemo" customModuleProvider="target">
-                        <rect key="frame" x="20" y="182" width="87" height="40"/>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eBZ-JN-sxv" customClass="LoginButton" customModule="HoverButtonDemo" customModuleProvider="target">
+                        <rect key="frame" x="25" y="41" width="103" height="33"/>
                         <animations/>
-                        <buttonCell key="cell" type="bevel" title="Twitter" bezelStyle="regularSquare" image="twitter" imagePosition="left" alignment="center" imageScaling="proportionallyDown" inset="2" id="2mM-M4-N4J">
+                        <buttonCell key="cell" type="bevel" title="Fancymax" bezelStyle="regularSquare" image="NSUserAccounts" imagePosition="left" alignment="center" imageScaling="proportionallyDown" inset="2" id="2mM-M4-N4J">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="smallSystem"/>
                         </buttonCell>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="color" keyPath="hoveredBackgroundColor">
-                                <color key="value" red="0.9529411793" green="0.61176472900000001" blue="0.070588238540000001" alpha="1" colorSpace="calibratedRGB"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="color" keyPath="pressedBackgroundColor">
-                                <color key="value" red="1" green="0.7679675655888456" blue="0.042983902739941016" alpha="1" colorSpace="calibratedRGB"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                    </button>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XCE-rB-MGf" customClass="HoverButton" customModule="HoverButtonDemo" customModuleProvider="target">
-                        <rect key="frame" x="132" y="182" width="87" height="40"/>
-                        <animations/>
-                        <buttonCell key="cell" type="bevel" title="Google" bezelStyle="regularSquare" image="google" imagePosition="left" alignment="center" imageScaling="proportionallyDown" inset="2" id="tfY-UN-2R6">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="smallSystem"/>
-                        </buttonCell>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="color" keyPath="hoveredBackgroundColor">
-                                <color key="value" red="0.9529411793" green="0.61176472900000001" blue="0.070588238540000001" alpha="1" colorSpace="calibratedRGB"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="color" keyPath="pressedBackgroundColor">
-                                <color key="value" red="1" green="0.76796756560000001" blue="0.042983902740000003" alpha="1" colorSpace="calibratedRGB"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                    </button>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UGC-Ni-qeA" customClass="HoverButton" customModule="HoverButtonDemo" customModuleProvider="target">
-                        <rect key="frame" x="244" y="182" width="96" height="40"/>
-                        <animations/>
-                        <buttonCell key="cell" type="bevel" title="Facebook" bezelStyle="regularSquare" image="facebook" imagePosition="left" alignment="center" imageScaling="proportionallyDown" inset="2" id="dgR-Aa-JRz">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="smallSystem"/>
-                        </buttonCell>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="color" keyPath="hoveredBackgroundColor">
-                                <color key="value" red="0.9529411793" green="0.61176472900000001" blue="0.070588238540000001" alpha="1" colorSpace="calibratedRGB"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="color" keyPath="pressedBackgroundColor">
-                                <color key="value" red="1" green="0.76796756560000001" blue="0.042983902740000003" alpha="1" colorSpace="calibratedRGB"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="euz-uQ-Ejj" customClass="HoverButton" customModule="HoverButtonDemo" customModuleProvider="target">
-                        <rect key="frame" x="365" y="182" width="109" height="40"/>
+                        <rect key="frame" x="147" y="203" width="109" height="40"/>
                         <animations/>
                         <buttonCell key="cell" type="bevel" title="Instagram" bezelStyle="regularSquare" image="instagram" imagePosition="left" alignment="center" imageScaling="proportionallyDown" inset="2" id="tsF-FT-Qno">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -741,7 +701,7 @@
                         </userDefinedRuntimeAttributes>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j9E-14-aNl" customClass="HoverButton" customModule="HoverButtonDemo" customModuleProvider="target">
-                        <rect key="frame" x="20" y="48" width="44" height="71"/>
+                        <rect key="frame" x="20" y="112" width="44" height="71"/>
                         <animations/>
                         <buttonCell key="cell" type="bevel" title="Twitter" bezelStyle="regularSquare" image="twitter" imagePosition="above" alignment="center" imageScaling="proportionallyDown" inset="2" id="kBR-9I-xVS">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -756,8 +716,24 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UGC-Ni-qeA" customClass="HoverButton" customModule="HoverButtonDemo" customModuleProvider="target">
+                        <rect key="frame" x="20" y="203" width="96" height="40"/>
+                        <animations/>
+                        <buttonCell key="cell" type="bevel" title="Facebook" bezelStyle="regularSquare" image="facebook" imagePosition="left" alignment="center" imageScaling="proportionallyDown" inset="2" id="dgR-Aa-JRz">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="hoveredBackgroundColor">
+                                <color key="value" red="0.9529411793" green="0.61176472900000001" blue="0.070588238540000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="pressedBackgroundColor">
+                                <color key="value" red="1" green="0.76796756560000001" blue="0.042983902740000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cjL-22-aU9" customClass="HoverButton" customModule="HoverButtonDemo" customModuleProvider="target">
-                        <rect key="frame" x="132" y="48" width="44" height="71"/>
+                        <rect key="frame" x="147" y="112" width="44" height="71"/>
                         <animations/>
                         <buttonCell key="cell" type="bevel" title="Google" bezelStyle="regularSquare" image="google" imagePosition="above" alignment="center" imageScaling="proportionallyDown" inset="2" id="FE4-ds-byt">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -779,6 +755,7 @@
         </window>
     </objects>
     <resources>
+        <image name="NSUserAccounts" width="32" height="32"/>
         <image name="facebook" width="51.200000762939453" height="51.200000762939453"/>
         <image name="google" width="51.200000762939453" height="51.200000762939453"/>
         <image name="instagram" width="51.200000762939453" height="51.200000762939453"/>
