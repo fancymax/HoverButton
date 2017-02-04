@@ -9,7 +9,7 @@
 import Cocoa
 
 class LoginButton: NSButton{
-    private var hovered: Bool = false
+    fileprivate var hovered: Bool = false
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -25,44 +25,46 @@ class LoginButton: NSButton{
         self.wantsLayer = true
         self.createTrackingArea()
         self.hovered = false
+        
+
     }
     
-    private var trackingArea: NSTrackingArea!
+    fileprivate var trackingArea: NSTrackingArea!
     func createTrackingArea(){
         if(self.trackingArea != nil){
             self.removeTrackingArea(self.trackingArea!)
         }
         let circleRect = self.bounds
-        let flag = NSTrackingAreaOptions.MouseEnteredAndExited.rawValue + NSTrackingAreaOptions.ActiveInActiveApp.rawValue
+        let flag = NSTrackingAreaOptions.mouseEnteredAndExited.rawValue + NSTrackingAreaOptions.activeInActiveApp.rawValue
         self.trackingArea = NSTrackingArea(rect: circleRect, options: NSTrackingAreaOptions(rawValue: flag), owner: self, userInfo: nil)
         self.addTrackingArea(self.trackingArea)
     }
     
-    override func mouseEntered(theEvent: NSEvent) {
+    override func mouseEntered(with theEvent: NSEvent) {
         self.hovered = true
         self.needsDisplay = true
     }
     
-    override func mouseExited(theEvent: NSEvent) {
+    override func mouseExited(with theEvent: NSEvent) {
         self.hovered = false
         self.needsDisplay = true
     }
     
-    func drawText(text:String, inRect:NSRect){
+    func drawText(_ text:String, inRect:NSRect){
         let aParagraghStyle = NSMutableParagraphStyle()
-        aParagraghStyle.lineBreakMode  = NSLineBreakMode.ByWordWrapping
-        aParagraghStyle.alignment  = NSTextAlignment.Left
+        aParagraghStyle.lineBreakMode  = NSLineBreakMode.byWordWrapping
+        aParagraghStyle.alignment  = NSTextAlignment.left
         
-        let attrs = [NSParagraphStyleAttributeName:aParagraghStyle, NSFontAttributeName:self.font!]
-        let size = (text as NSString).sizeWithAttributes(attrs)
+        let attrs = [NSParagraphStyleAttributeName:aParagraghStyle, NSFontAttributeName:self.font!] as [String : Any]
+        let size = (text as NSString).size(withAttributes: attrs)
         let r:NSRect = NSMakeRect(inRect.origin.x,
             inRect.origin.y + (inRect.size.height - size.height)/2.0 - 2,
             inRect.size.width,
             size.height)
-        (text as NSString).drawInRect(r, withAttributes: attrs)
+        (text as NSString).draw(in: r, withAttributes: attrs)
     }
     
-    override func drawRect(dirtyRect: NSRect) {
+    override func draw(_ dirtyRect: NSRect) {
         NSGraphicsContext.saveGraphicsState()
         
         var imageRect = NSRect()
@@ -71,7 +73,7 @@ class LoginButton: NSButton{
             imageRect.size.width  = imageRect.size.height
             imageRect.origin.x = 3
             imageRect.origin.y = 3
-            image.drawInRect(imageRect)
+            image.draw(in: imageRect)
         }
         var textRect = self.bounds
         textRect.origin.x += imageRect.size.width + 10
@@ -85,7 +87,7 @@ class LoginButton: NSButton{
             rect.origin.x += 1
             rect.origin.y += 1
             let bgPath = NSBezierPath(roundedRect: rect, xRadius: 5, yRadius: 5)
-            NSColor.lightGrayColor().set()
+            NSColor.lightGray.set()
             bgPath.lineWidth = 1
             bgPath.stroke()
         }

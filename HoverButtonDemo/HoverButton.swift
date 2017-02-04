@@ -13,7 +13,7 @@ class HoverButton: NSButton{
     var hoveredBackgroundColor: NSColor?
     var pressedBackgroundColor: NSColor?
     
-    private var hovered: Bool = false
+    fileprivate var hovered: Bool = false
     
     override var wantsUpdateLayer:Bool{
         return true
@@ -33,47 +33,53 @@ class HoverButton: NSButton{
         self.wantsLayer = true
         self.createTrackingArea()
         self.hovered = false
-        self.hoveredBackgroundColor = NSColor.selectedTextBackgroundColor()
-        self.pressedBackgroundColor = NSColor.selectedTextBackgroundColor()
-        self.backgroundColor = NSColor.clearColor()
+        self.hoveredBackgroundColor = NSColor.selectedTextBackgroundColor
+        self.pressedBackgroundColor = NSColor.selectedTextBackgroundColor
+        self.backgroundColor = NSColor.clear
+
     }
     
-    private var trackingArea: NSTrackingArea!
+    fileprivate var trackingArea: NSTrackingArea!
     func createTrackingArea(){
         if(self.trackingArea != nil){
             self.removeTrackingArea(self.trackingArea!)
         }
         let circleRect = self.bounds
-        let flag = NSTrackingAreaOptions.MouseEnteredAndExited.rawValue + NSTrackingAreaOptions.ActiveInActiveApp.rawValue
+        let flag = NSTrackingAreaOptions.mouseEnteredAndExited.rawValue + NSTrackingAreaOptions.activeInActiveApp.rawValue
         self.trackingArea = NSTrackingArea(rect: circleRect, options: NSTrackingAreaOptions(rawValue: flag), owner: self, userInfo: nil)
         self.addTrackingArea(self.trackingArea)
     }
     
-    override func mouseEntered(theEvent: NSEvent) {
+    override func mouseEntered(with theEvent: NSEvent) {
         self.hovered = true
-        NSCursor.pointingHandCursor().set()
         self.needsDisplay = true
     }
     
-    override func mouseExited(theEvent: NSEvent) {
+    override func mouseExited(with theEvent: NSEvent) {
         self.hovered = false
-        NSCursor.arrowCursor().set()
         self.needsDisplay = true
     }
     
     override func updateLayer() {
         if(hovered){
-            if (self.cell!.highlighted){
-                self.layer?.backgroundColor = pressedBackgroundColor?.CGColor
+            if (self.cell!.isHighlighted){
+                self.layer?.cornerRadius = 15.0
+                self.layer?.borderColor = pressedBackgroundColor?.cgColor
+                self.layer?.borderWidth = 2
+                
             }
             else{
-                self.layer?.backgroundColor = hoveredBackgroundColor?.CGColor
+                self.layer?.cornerRadius = 15.0
+                self.layer?.borderColor = hoveredBackgroundColor?.cgColor
+                self.layer?.borderWidth = 2
+
             }
         }
         else{
-            self.layer?.backgroundColor = backgroundColor?.CGColor
+            self.layer?.backgroundColor = backgroundColor?.cgColor
+            self.layer?.borderWidth = 0
+            
         }
         
-        Swift.print("updateLayer")
     }
 }

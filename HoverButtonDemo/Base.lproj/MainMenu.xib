@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9060"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -14,6 +14,7 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="HoverButtonDemo" customModuleProvider="target">
             <connections>
+                <outlet property="testBtn" destination="ggS-9q-5rN" id="yS2-Dn-Aar"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -666,27 +667,28 @@
                     </menu>
                 </menuItem>
             </items>
+            <point key="canvasLocation" x="434" y="166"/>
         </menu>
         <window title="HoverButtonDemo" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="480" height="263"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <rect key="contentRect" x="335" y="390" width="480" height="267"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="263"/>
+                <rect key="frame" x="0.0" y="0.0" width="480" height="267"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eBZ-JN-sxv" customClass="LoginButton" customModule="HoverButtonDemo" customModuleProvider="target">
-                        <rect key="frame" x="25" y="41" width="103" height="33"/>
-                        <animations/>
+                        <rect key="frame" x="25" y="45" width="103" height="33"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="bevel" title="Fancymax" bezelStyle="regularSquare" image="NSUserAccounts" imagePosition="left" alignment="center" imageScaling="proportionallyDown" inset="2" id="2mM-M4-N4J">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="smallSystem"/>
                         </buttonCell>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="euz-uQ-Ejj" customClass="HoverButton" customModule="HoverButtonDemo" customModuleProvider="target">
-                        <rect key="frame" x="147" y="203" width="109" height="40"/>
-                        <animations/>
+                        <rect key="frame" x="147" y="207" width="109" height="40"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="bevel" title="Instagram" bezelStyle="regularSquare" image="instagram" imagePosition="left" alignment="center" imageScaling="proportionallyDown" inset="2" id="tsF-FT-Qno">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="smallSystem"/>
@@ -701,8 +703,8 @@
                         </userDefinedRuntimeAttributes>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j9E-14-aNl" customClass="HoverButton" customModule="HoverButtonDemo" customModuleProvider="target">
-                        <rect key="frame" x="20" y="112" width="44" height="71"/>
-                        <animations/>
+                        <rect key="frame" x="20" y="116" width="44" height="71"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="bevel" title="Twitter" bezelStyle="regularSquare" image="twitter" imagePosition="above" alignment="center" imageScaling="proportionallyDown" inset="2" id="kBR-9I-xVS">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="smallSystem"/>
@@ -717,8 +719,8 @@
                         </userDefinedRuntimeAttributes>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UGC-Ni-qeA" customClass="HoverButton" customModule="HoverButtonDemo" customModuleProvider="target">
-                        <rect key="frame" x="20" y="203" width="96" height="40"/>
-                        <animations/>
+                        <rect key="frame" x="20" y="207" width="96" height="40"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="bevel" title="Facebook" bezelStyle="regularSquare" image="facebook" imagePosition="left" alignment="center" imageScaling="proportionallyDown" inset="2" id="dgR-Aa-JRz">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="smallSystem"/>
@@ -733,8 +735,8 @@
                         </userDefinedRuntimeAttributes>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cjL-22-aU9" customClass="HoverButton" customModule="HoverButtonDemo" customModuleProvider="target">
-                        <rect key="frame" x="147" y="112" width="44" height="71"/>
-                        <animations/>
+                        <rect key="frame" x="147" y="116" width="44" height="71"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="bevel" title="Google" bezelStyle="regularSquare" image="google" imagePosition="above" alignment="center" imageScaling="proportionallyDown" inset="2" id="FE4-ds-byt">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="smallSystem"/>
@@ -748,10 +750,17 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ggS-9q-5rN" customClass="HoverButton" customModule="HoverButtonDemo" customModuleProvider="target">
+                        <rect key="frame" x="233" y="45" width="103" height="33"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="bevel" title="测试测试" bezelStyle="regularSquare" imagePosition="left" alignment="center" imageScaling="proportionallyDown" inset="2" id="7Ad-dF-1wy">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystem"/>
+                        </buttonCell>
+                    </button>
                 </subviews>
-                <animations/>
             </view>
-            <point key="canvasLocation" x="281" y="352.5"/>
+            <point key="canvasLocation" x="599" y="427"/>
         </window>
     </objects>
     <resources>
